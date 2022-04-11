@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- * Return: 0 after printing 0-9
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -13,7 +13,6 @@ int main(void)
 		printf("%i", i);
 	}
 
-	printf('\n');
-
+	printf("\n");
 	return (0);
 }
