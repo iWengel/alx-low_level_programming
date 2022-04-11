@@ -15,7 +15,8 @@ int main(void)
 		{
 			if (a != b)
 			{
-				putchar(ab);
+				putchar(a);
+				putchar(b);
 			}
 			putchar(',');
 			putchar(' ');
