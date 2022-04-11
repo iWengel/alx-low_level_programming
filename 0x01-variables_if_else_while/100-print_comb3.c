@@ -20,6 +20,10 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
+			else if (a == 8 && b == 9)
+			{
+				break;
+			}
 		}
 	}
 	putchar('\n');
