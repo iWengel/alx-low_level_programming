@@ -11,7 +11,7 @@ int main(void)
 	for (input = 'a'; input <= 'z'; input++)
 	{
 		if (input == 'e')
-	        	continue;
+			continue;
 		else if (input == 'q')
 			continue;
 		else
