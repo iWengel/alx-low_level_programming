@@ -13,14 +13,14 @@ int main(void)
 	{
 		for (b = 48; b < 58; b++)
 		{
-			if (a == 8 && b == 9)
-			{
-				break;
-			}
-			else if (a < b)
+			if (a < b)
 			{
 				putchar(a);
 				putchar(b);
+			}
+			else if (a == 8 && b == 9)
+			{
+				break;
 			}
 			putchar(',');
 			putchar(' ');
