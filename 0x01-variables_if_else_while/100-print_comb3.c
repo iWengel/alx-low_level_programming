@@ -9,23 +9,23 @@ int main(void)
 	int a;
 	int b;
 
-	for (a = 48; a < 58; a++)
+	for (a = 48; a <= 57; a++)
 	{
-		for (b = 48; b < 58; b++)
+		for (b = 48; b <= 57; b++)
 		{
-			if (a == 56 && b == 57)
-			{
-				break;
-			}
-			else if (a < b)
+			if (b > a)
 			{
 				putchar(a);
 				putchar(b);
-				putchar(',');
-				putchar(' ');
+			}
+			else if (a == 56 && b == 57)
+			{
+				break;
 			}
 		}
-	}	
+		putchar(',');
+		putchar(' ');
+	}
 	putchar('\n');
 	return (0);
 }
