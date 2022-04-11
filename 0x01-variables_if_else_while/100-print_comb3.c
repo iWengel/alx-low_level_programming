@@ -22,7 +22,8 @@ int main(void)
 			}
 			else if (a == 8 && b == 9)
 			{
-				continue;
+				putchar(a);
+				putchar(b);
 			}
 		}
 	}
