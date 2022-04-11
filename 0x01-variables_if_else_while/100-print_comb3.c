@@ -6,15 +6,15 @@
  */
 int main(void)
 {
-	int b;
 	int a;
+	int b;
 
-	for (b = 48; b < 58; b++)
+	for (a = 48; a < 58; a++)
 	{
-		for (a = 48; a < b; a++)
+		for (b = 48; b < a; b++)
 		{
-			putchar(a);
 			putchar(b);
+			putchar(a);
 			if (a == 56 && b == 57)
 			{
 				break;
