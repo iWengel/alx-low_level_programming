@@ -13,17 +13,10 @@ int main(void)
 	{
 		for (b = 0; b < 10; b++)
 		{
-			if (a == b)
-			{
-				continue;
-			}
-			else
-			{
-				putchar(a);
-				putchar(b);
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(a);
+			putchar(b);
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
