@@ -13,22 +13,19 @@ int main(void)
 	{
 		for (b = 48; b < 58; b++)
 		{
-			while (a < b)
+			if (a == 56 && b == 57)
 			{
-				if (a == 56 && b == 57)
-				{
-					break;
-				}
-				else
-				{
-					putchar(a);
-					putchar(b);
-					putchar(',');
-					putchar(' ');
-				}
+				break;
 			}
-		}	
-	}
+			else if (a < b)
+			{
+				putchar(a);
+				putchar(b);
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}	
 	putchar('\n');
 	return (0);
 }
