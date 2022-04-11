@@ -13,7 +13,7 @@ int main(void)
 	{
 		for (b = 48; b < 58; b++)
 		{
-			if (a == 8 && b== 9)
+			if (a == 8 && b == 9)
 			{
 				break;
 			}
@@ -21,9 +21,9 @@ int main(void)
 			{
 				putchar(a);
 				putchar(b);
-				putchar(',');
-				putchar(' ');
 			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
