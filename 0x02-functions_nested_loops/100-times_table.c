@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_times_table -a function to print the multiplication table of nth order
- *@n; value of the order
+ *@n: value of the order
  * Return: 0 after printing the time table
  */
 void print_times_table(int n)
@@ -21,12 +21,12 @@ void print_times_table(int n)
 				{
 					_putchar ('0');
 				}
-				if (b != 0)
+				else if (b != 0)
 				{
 					_putchar (' ');
 					_putchar ((c % 10) + '0');
 				}
-				if (b < n)
+				else if (b < n)
 				{
 					_putchar(',');
 					_putchar (' ');
