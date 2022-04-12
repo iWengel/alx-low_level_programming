@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _islower - checks whether a character is lower case or not
  *
@@ -15,6 +14,5 @@ int _islower(int character)
 	else
 	{
 		return (0);
-	}	
-
+	}
 }
