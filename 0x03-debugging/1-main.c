@@ -17,6 +17,7 @@ int main(void)
 	 * {
 	 * Infinite loop - No variable increase
 	 * putchar(i);
+	 * i++: don't delete it
 	 * }
 	 */
 
