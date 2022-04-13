@@ -21,7 +21,7 @@ void print_times_table(int n)
 				{
 					if (c / 10 == 0)
 					{
-						_putchar(c)
+						_putchar(c);
 					}
 					else if (((c / 10) > 0) && ((c / 10) <= 9))
 					{
@@ -42,7 +42,7 @@ void print_times_table(int n)
 				{
 					 if (c / 10 == 0)
                                         {
-                                                _putchar(c)
+                                                _putchar(c);
                                         }
                                         else if (((c / 10) > 0) && ((c / 10) <= 9))
                                         {
