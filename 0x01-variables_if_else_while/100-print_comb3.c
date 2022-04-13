@@ -17,15 +17,12 @@ int main(void)
 			{
 				break;
 			}
-			else
+			else if (a < b)
 			{
-				while (a < b)
-				{
-					putchar(a);
-					putchar(b);
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(a);
+				putchar(b);
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
