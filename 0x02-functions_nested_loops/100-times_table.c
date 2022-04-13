@@ -10,53 +10,53 @@ void print_times_table(int n)
 	int b;
 	int c;
 
-	for (a = 0; a <= n; a++)
+	if (n > 0 && n <= 15)
 	{
-		for (b = 0; b <= n; b++)
+		for (a = 0; a <= n; a++)
 		{
-			c = a * b;
-			if ((c / 10) == 0)
+			for (b = 0; b <= n; b++)
 			{
-				if (b == 0)
-				{
-					_putchar('0');
-				}
-				if (b != 0)
-				{
-					_putchar(' ');
-					_putchar((c % 10) + '0');
-				}
+				c = a * b;
 				if (b < n)
 				{
+					if ((c / 10) == 0)
+					{
+						_putchar(c);
+					}
+					else if (((c / 10) > 0) && ((c / 10) <= 9))
+					{
+						_putchar((c / 10) + '0');
+						_putchar((c % 10) + '0');
+					}
+					else if (((c / 100) > 0) && ((c / 100) <= 9))
+					{
+						_putchar((c / 100) + '0');
+						_putchar(((c / 10) % 10) + '0');
+						_putchar((c % 10) + '0');
+					}
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 				}
-			}
-			else if ((c / 100) == 0)
-			{
-				_putchar((c / 10) + '0');
-				_putchar((c % 10) + '0');
-				if (b < n)
+				else
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					if ((c / 10) == 0)
+                                        {
+                                                _putchar(c);
+                                        }
+                                        else if (((c / 10) > 0) && ((c / 10) <= 9))
+                                        {
+                                                _putchar((c / 10) + '0');
+                                                _putchar((c % 10) + '0');
+                                        }
+                                        else if (((c / 100) > 0) && ((c / 100) <= 9))
+                                        {
+                                                _putchar((c / 100) + '0');
+                                                _putchar(((c / 10) % 10) + '0');
+                                                _putchar((c % 10) + '0');
+                                        }
 				}
 			}
-			else if ((c / 1000) == 0)
-			{
-				_putchar((c / 100) + '0');
-				_putchar(((c / 10) % 10) + '0');
-				_putchar((c % 10) + '0');
-				if (b < n)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
-			}
-				
 		}
 		_putchar('\n');
 	}
