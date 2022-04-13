@@ -17,47 +17,36 @@ void print_times_table(int n)
 			for (b = 0; b <= n; b++)
 			{
 				c = a * b;
-				if (b < n)
-				{
-					if (c / 10 == 0)
+				if ((c / 10) == 0)
+				{	
+					if (b == 0)
 					{
-						_putchar(c);
-					}
-					else if (((c / 10) > 0) && ((c / 10) <= 9))
+						_putchar ('0');
+					}	
+					if (b != 0)
 					{
-						_putchar((c / 10) + '0');
-						_putchar((c % 10) + '0');
+						_putchar (' ');
+						_putchar ((c % 10) + '0');
 					}
-					else if (((c / 100) > 0) && ((c / 100) <= 9))
+					if (b < n)
 					{
-						_putchar((c / 100) + '0');
-						_putchar(((c / 10) % 10) + '0');
-						_putchar((c % 10) + '0');
+						_putchar(',');
+						_putchar (' ');
 					}
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
 				}
 				else
 				{
-					 if (c / 10 == 0)
-                                        {
-                                                _putchar(c);
-                                        }
-                                        else if (((c / 10) > 0) && ((c / 10) <= 9))
-                                        {
-                                                _putchar((c / 10) + '0');
-                                                _putchar((c % 10) + '0');
-                                        }
-                                        else if (((c / 100) > 0) && ((c / 100) <= 9))
-                                        {
-                                                _putchar((c / 100) + '0');
-                                                _putchar(((c / 10) % 10) + '0');
-                                                _putchar((c % 10) + '0');
-                                        }
+					_putchar ((c / 10) + '0');
+					_putchar ((c % 10) + '0');
+					if (b < n)
+					{
+						_putchar(',');
+						_putchar (' ');
+					}
 				}
-			}				
+			}
 		}
+		_putchar ('\n');
 	}
-	_putchar('\n');
 }
+			
