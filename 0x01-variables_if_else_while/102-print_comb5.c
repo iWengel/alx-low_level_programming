@@ -2,39 +2,28 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success/correct)
  */
 int main(void)
 {
 	int a;
 	int b;
-	int c;
-	int d;
 
-	for (a = 48; a <= 57; a++)
+	for (a = 0; a < 100 ; a++)
 	{
-		for (b = 48; b <= 57; b++)
+		for (b = a + 1 ; b < 100; b++)
 		{
-			for (c = 48; c <= 57; c++)
+			putchar (a / 10 + '0');
+			putchar (a % 10 + '0');
+			putchar (' ');
+			putchar (b / 10 + '0');
+			putchar (b % 10 + '0');
+			if (a == 98 && b == 99)
 			{
-				for (d = 48; d <= 57; d++)
-				{
-					if ((a <= c) && (b <= d))
-					{
-						putchar(a);
-						putchar(b);
-						putchar(' ');
-						putchar(c);
-						putchar(d);
-						if ((a == 57) && (b == 56) && (c == 57) && (d == 57))
-						{
-							break;
-						}
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				break;
 			}
+			putchar(',');
+			putchar (' ');
 		}
 	}
 	putchar('\n');
