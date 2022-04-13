@@ -15,7 +15,8 @@ int main(void)
 		{
 			if ((a == 56) && (b == 57))
 			{
-				break;
+				putchar(a);
+				putchar(b);
 			}
 			else if (a < b)
 			{
