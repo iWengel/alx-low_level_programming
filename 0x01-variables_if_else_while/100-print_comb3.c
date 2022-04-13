@@ -13,14 +13,17 @@ int main(void)
 	{
 		for (b = 48; b <= 57; b++)
 		{
-			putchar(a);
-			putchar(b);
-			if ((a == 56) && (b == 57))
+			if (a < b)
 			{
-				break;
+				putchar(a);
+				putchar(b);
+				if ((a == 56) && (b == 57))
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
 			}
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
