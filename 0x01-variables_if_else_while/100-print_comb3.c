@@ -6,25 +6,24 @@
  */
 int main(void)
 {
-	int a;
-	int b;
+	int a = 48;
+	int b = 48;
 
-	for (a = 48; a <= 57; a++)
+	while (a <= 57)
 	{
-		for (b = 48; b <= 57; b++)
+		while ((b <= 57) && (b > a))
 		{
-			while (a < b)
+			putchar(a);
+			putchar(b);
+			if ((a == 56) && (b == 57))
 			{
-				putchar(a);
-				putchar(b);
-				if ((a == 56) && (b == 57))
-					{
-						break;
-					}
-				putchar(',');
-				putchar(' ');
+				break;
 			}
+			putchar(',');
+			putchar(' ');
+			b++;
 		}
+		a++;
 	}
 	putchar('\n');
 	return (0);
