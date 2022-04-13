@@ -19,9 +19,9 @@ void print_times_table(int n)
 				c = a * b;
 				if (b < n)
 				{
-					if ((c / 10) == 0)
+					if (c / 10 == 0)
 					{
-						_putchar(c);
+						_putchar(c)
 					}
 					else if (((c / 10) > 0) && ((c / 10) <= 9))
 					{
@@ -40,9 +40,9 @@ void print_times_table(int n)
 				}
 				else
 				{
-					if ((c / 10) == 0)
+					 if (c / 10 == 0)
                                         {
-                                                _putchar(c);
+                                                _putchar(c)
                                         }
                                         else if (((c / 10) > 0) && ((c / 10) <= 9))
                                         {
@@ -56,8 +56,8 @@ void print_times_table(int n)
                                                 _putchar((c % 10) + '0');
                                         }
 				}
-			}
+			}				
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
