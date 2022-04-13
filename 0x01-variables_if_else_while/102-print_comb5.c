@@ -22,7 +22,7 @@ int main(void)
 					putchar(a);
 					putchar(b);
 					putchar(' ');
-					putcahr(c);
+					putchar(c);
 					putchar(d);
 					if ((a == 57) && (b == 56) && (c == 57) && (d == 57))
 					{
