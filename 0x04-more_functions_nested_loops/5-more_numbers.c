@@ -2,8 +2,8 @@
 
 /**
  * more_numbers - prints the numbers 0-14 10 times
- * @i: contains the counter
- * @j: contains the values to be printed
+ *@i: contains the counter
+ *@J: contains the value to be printed
  * Return: 0 after printing
  */
 
