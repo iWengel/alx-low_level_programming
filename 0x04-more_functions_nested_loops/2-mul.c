@@ -6,7 +6,6 @@
  * @b: contains the other value from the two integers 
  * Return: 0 after multiplying the numbers
  */
-
 int mul(int a, int b)
 {
 	return (a * b);
