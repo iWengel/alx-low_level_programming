@@ -28,6 +28,6 @@ void more_numbers(void)
 			}
 			_putchar(b + '0');
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
