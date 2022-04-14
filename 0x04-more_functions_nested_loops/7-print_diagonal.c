@@ -2,8 +2,8 @@
 
 /**
  * print_diagonal - prints diagonal line
- *@n: contains the number of times the character / is printed
- * Return: 0 after printing a diagonal line
+ *@n: print int
+ * Return: Always 0.
  */
 
 void print_diagonal(int n)
@@ -11,14 +11,20 @@ void print_diagonal(int n)
 	int i;
 	int b;
 	
-	for (i = 1; i <= n; i++)
+	if (n > 0)
 	{
-		for (b = 0; b < i; b++)
+		for (i = 0; i < n; i++)
 		{
-			_putchar (' ');
+			for (b = 0; b < i; b++)
+			{
+				_putchar (' ');
+			}
+			_putchar (92);
+			_putchar ('\n');
 		}
-		_putchar (92);
+	}
+	else
+	{
 		_putchar ('\n');
 	}
-	_putchar ('\n');
 }
