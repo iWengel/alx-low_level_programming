@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int sum;
+	unsigned long a = 1;
+	unsigned long b = 2;
+	unsigned long sum;
 	int count;
 
 	printf("1, ");
@@ -18,11 +18,13 @@ int main(void)
 	{
 		sum = a + b;
 		printf("%d", sum);
-		printf(", ");
+		if (count ==  47)
+			printf("\n");
+		else
+			printf(", ");
 		a = b;
 		b = sum;
 	}
-	printf("\n");
 	return (0);
 }
 
