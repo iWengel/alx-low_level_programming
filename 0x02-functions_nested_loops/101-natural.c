@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Return: 0 after printing the sum of all natural numbers below 1024 that are multiples of 3 or 5
+ * Return: 0 after printing the sum of the numbers
  */
 int main(void)
 {
