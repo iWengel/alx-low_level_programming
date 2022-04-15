@@ -17,7 +17,7 @@ int main(void)
 	for (count = 0; count < 48; count++)
 	{
 		sum = a + b;
-		printf("%d", sum);
+		printf("%ld", sum);
 		if (count ==  47)
 			printf("\n");
 		else
