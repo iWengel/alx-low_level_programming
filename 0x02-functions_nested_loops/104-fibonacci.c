@@ -44,7 +44,7 @@ int main(void)
 		a2 = b2;
 		b1 = half1;
 		b2 = half2;
-	}	
+	}
 	printf("\n");
 	return (0);
 }
