@@ -3,7 +3,8 @@
 /**
  * main - entry point
  *
- * Return: 0 after printing tthe sum of the even valued Fibonaccis
+ * Return: 0 after printing the sum of even-valued Fibonacci sequence
+ *           terms not exceeding 4000000.
  */
 int main(void)
 {
@@ -17,8 +18,8 @@ int main(void)
 			break;
 
 		if ((sum % 2) == 0)
-			total = total + sum;
-		
+		total = total + sum;
+
 		a = b;
 		b = sum;
 	}
