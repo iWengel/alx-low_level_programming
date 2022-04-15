@@ -22,6 +22,7 @@ int main(void)
 		a = b;
 		b = sum;
 	}
-	putchar('\n');
+	printf("\n");
+	return (0);
 }
 
