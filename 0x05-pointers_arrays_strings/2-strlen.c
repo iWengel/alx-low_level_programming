@@ -5,7 +5,7 @@
  * @s: Pointer to the array of characters
  * Return: an int representing the length of the string
  */
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int i;
 
