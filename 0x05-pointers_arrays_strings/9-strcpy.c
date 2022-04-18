@@ -6,7 +6,7 @@
  * @src: pointer to the copy location
  * Return: dest.
  */
-char *_strcpy(char *dest, char *scr)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
