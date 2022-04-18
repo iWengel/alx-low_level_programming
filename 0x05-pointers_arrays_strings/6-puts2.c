@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _puts - A function that prints a string
+ * puts2 - A function that prints every other character in a string
  * @str: a pointer pointing to the string variable
  * Return: nothing
  */
-void _puts(char *str)
+void puts2(char *str)
 {
 	int i;
 
