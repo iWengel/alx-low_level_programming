@@ -5,26 +5,21 @@
  * @dest: first string
  * @src: second string
  * @n: number of characters
- * Return: src.
+ * Return: dest.
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int a = 0, b = 0;
+	int a = 0;
 
-	while (b < n)
+	while (a < n && src[a] != '\0')
 	{
-		src[b];
-		b++;
+		dest[a] = src[a];
+		a++;
 	}
-	while (b >= n)
+	while (a < n)
 	{
-		while (dest[a] != '\0')
-		{
-			src[b] = dest[a];
-			a++;
-			b++;
-		}
+		dest[a] = '\0';
+		a++;
 	}
-	src[b] = '\0';
 	return (src);
 }
