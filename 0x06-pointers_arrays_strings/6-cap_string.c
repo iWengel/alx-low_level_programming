@@ -12,7 +12,7 @@ char *cap_string(char *string)
 
 	if (*(string + a) >= 97 && *(string + a) <= 122)
 		*(string + a) = *(string + a) - 32;
-		a++;
+	a++;
 		while (*(string + a) != '\0')
 		{
 			for (i = 0; i < 13; i++)
@@ -21,7 +21,7 @@ char *cap_string(char *string)
 				{
 					if ((*(string + (a + 1)) >= 97) && (*(string + (a + 1)) <= 122))
 						*(string + (a + 1)) = *(string + (a + 1)) - 32;
-						break;
+					break;
 				}
 			}
 			a++;
