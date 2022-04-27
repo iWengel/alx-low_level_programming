@@ -20,7 +20,7 @@ int _evaluate(int i, int n)
 }
 
 /**
- * _sqrt_recursion - A function that returns the natural square root of a number
+ * _sqrt_recursion - returns the natural square root of a number
  * @n: argument integer
  * Return: -1 if number is not a perfect square, result if otherwise
  */
