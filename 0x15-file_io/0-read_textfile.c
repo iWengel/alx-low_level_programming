@@ -5,8 +5,7 @@
  * @filename: pointer to the text in the file
  * @letters: number of letters
  * 
- * Return: the number of letters, 0 if file can't be read or
- * 	   filename is NULL.
+ * Return: the number of letters, 0 if file can't be read
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
