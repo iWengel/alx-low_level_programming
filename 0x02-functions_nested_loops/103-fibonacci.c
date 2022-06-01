@@ -11,7 +11,7 @@ int main(void)
 	long int evensum = 0;
 	
 	sum = 0;
-	while (sum < 400000)
+	while (sum < 4000000)
 	{
 		sum = i + j;
 		if (sum % 2 == 0)
