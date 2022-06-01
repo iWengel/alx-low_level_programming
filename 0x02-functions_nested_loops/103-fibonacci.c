@@ -7,18 +7,17 @@
  */
 int main(void)
 {
-	long int i = 1, j = 1, sum;
+	long int i = 0, j = 1, sum;
 	long int evensum = 0;
 
-	sum = 0;
+	sum = i + j;
 	while (sum < 4000000)
 	{
-		sum = i + j;
 		if (sum % 2 == 0)
 			evensum += sum;
 		i = j;
 		j = sum;
-		sum += j;
+		sum = i + j;
 	}
 	printf("%ld\n", evensum);
 	return (0);
