@@ -26,7 +26,7 @@ int main(void)
 	j1 = j / 10000000000;
 	j2 = j % 10000000000;
 
-	while (count < 98)
+	while (count < 99)
 	{
 		sum1 = i1 + j1;
 		sum2 = i2 + j2;
@@ -36,7 +36,7 @@ int main(void)
 			sum2 = sum2 % 10000000000;
 		}
 		printf("%lu%lu", sum1, sum2);
-		if (count == 97)
+		if (count == 98)
 			break;
 		printf(", ");
 		i1 = j1;
