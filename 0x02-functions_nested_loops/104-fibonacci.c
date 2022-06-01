@@ -8,18 +8,38 @@
 int main(void)
 {
 	unsigned long int i = 0, j = 1, sum;
+	unsigned long int i1, i2, j1, j2, sum1, sum2;
 	int count;
 
 	count = 0;
-	while (count < 98)
+	while (count < 93)
 	{
 		sum = i + j;
-		printf("%lu", sum);
+		printf("%lu, ", sum);
+		i = j;
+		j = sum;
+		count++;
+	}
+
+	i1 = i / 1000000000;
+	i2 = i % 1000000000;
+	j1 = j / 1000000000;
+	j2 = j % 1000000000;
+
+	while (count < 98)
+	{
+		sum1 = i1 + j1;
+		sum2 = i2 + j2;
+		if (sum2 > 999999999)
+			sum1 = sum1 + 1;
+		printf("%lu%lu", sum1, sum2);
 		if (count == 97)
 			break;
 		printf(", ");
-		i = j;
-		j = sum;
+		i1 = j1;
+		i2 = j2;
+		j1 = sum1;
+		j2 = sum2;
 		count++;
 	}
 	printf("\n");
