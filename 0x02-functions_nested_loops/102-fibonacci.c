@@ -1,30 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Entry point
  *
- * Return: 0 after printing the first 50 Fibonacci numbers
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	unsigned long a = 1;
-	unsigned long b = 2;
-	unsigned long sum;
-	int count;
+	int i = 1;
+	int j = 2;
+	int sum, count;
 
-	printf("1, ");
-	printf("2, ");
-	for (count = 0; count < 48; count++)
+	printf("%d, %d, ", i, j);
+	count = 0;
+	while (count < 48)
 	{
-		sum = a + b;
-		printf("%ld", sum);
-		if (count ==  47)
-			printf("\n");
-		else
-			printf(", ");
-		a = b;
-		b = sum;
+		sum = i + j;
+		printf("%d", sum);
+		if (count == 47)
+			break;
+		printf(", ");
+		i = j;
+		j = sum;
+		count++;
 	}
+	_putchar('\n');
 	return (0);
 }
 
