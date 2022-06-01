@@ -7,9 +7,8 @@
  */
 int main(void)
 {
-	int i = 1;
-	int j = 2;
-	int sum, count;
+	long long int i = 1, j = 2, sum;
+	int count;
 
 	printf("%d, %d, ", i, j);
 	count = 0;
