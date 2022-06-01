@@ -7,15 +7,15 @@
  */
 int main(void)
 {
-	long long int i = 1, j = 2, sum;
+	long int i = 1, j = 2, sum;
 	int count;
 
-	printf("%d, %d, ", i, j);
+	printf("%ld, %ld, ", i, j);
 	count = 0;
 	while (count < 48)
 	{
 		sum = i + j;
-		printf("%d", sum);
+		printf("%ld", sum);
 		if (count == 47)
 			break;
 		printf(", ");
