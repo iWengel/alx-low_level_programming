@@ -9,7 +9,7 @@ int main(void)
 {
 	long int i = 1, j = 1, sum;
 	long int evensum = 0;
-	
+
 	sum = 0;
 	while (sum < 4000000)
 	{
