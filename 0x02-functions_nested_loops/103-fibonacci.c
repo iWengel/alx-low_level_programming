@@ -1,28 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Entry point
  *
- * Return: 0 after printing the sum of even-valued Fibonacci sequence
- *           terms not exceeding 4000000.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	unsigned long a = 0, b = 1, sum;
-	float total;
-
-	while (1)
+	long int i = 1, j = 1, sum;
+	long int evensum = 0;
+	
+	sum = 0;
+	while (sum < 400000)
 	{
-		sum = a + b;
-		if (sum > 4000000)
-			break;
-
-		if ((sum % 2) == 0)
-		total = total + sum;
-
-		a = b;
-		b = sum;
+		sum = i + j;
+		if (sum % 2 == 0)
+			evensum += sum;
+		i = j;
+		j = sum;
+		sum += j;
 	}
-	printf("%.0f\n", total);
+	printf("%ld\n", evensum);
 	return (0);
 }
