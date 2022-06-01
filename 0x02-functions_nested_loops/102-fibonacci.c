@@ -24,7 +24,7 @@ int main(void)
 		j = sum;
 		count++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
 
