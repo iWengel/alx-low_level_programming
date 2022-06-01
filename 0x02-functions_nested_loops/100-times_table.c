@@ -14,7 +14,7 @@ void print_times_table(int n)
 	int mul;
 
 	if (n < 0 || n > 15)
-		break;
+		return;
 
 	i = 0;
 	while (i <= n)
