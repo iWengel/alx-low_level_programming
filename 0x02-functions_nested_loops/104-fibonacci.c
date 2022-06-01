@@ -12,7 +12,7 @@ int main(void)
 	int count;
 
 	count = 0;
-	while (count < 93)
+	while (count < 92)
 	{
 		sum = i + j;
 		printf("%lu, ", sum);
