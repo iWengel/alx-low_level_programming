@@ -1,60 +1,42 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_times_table - prints the n times table, starting with 0
- * @n: argument number
- *
+ * print_times_table -a function to print the multiplication table of nth order
+ *@n: value of the order
  * Return: Nothing.
  */
 void print_times_table(int n)
 {
-	int i;
-	int j;
-	int mul;
+	int a;
+	int b;
+	int c;
 
-	if (n < 0 || n > 15)
-		return;
-
-	i = 0;
-	while (i <= n)
+	if (n >= 0 && n <= 15)
 	{
-		j = 0;
-		while (j <= n)
+		for (a = 0; a <= n; a++)
 		{
-			mul = i * j;
-			if (j == 0)
-				_putchar(mul + '0');
-			else
+			_putchar('0');
+			for (b = 1; b <= n; b++)
 			{
-				if (mul / 10 == 0)
+				_putchar(',');
+				_putchar(' ');
+				c = a * b;
+				if (c <= 99)
+					_putchar(' ');
+				if (c <= 9)
+					_putchar(' ');
+				if (c >= 100)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(mul + '0');
+					_putchar((c / 100) + '0');
+					_putchar(((c / 10)) % 10 + '0');
 				}
-				else if ((mul / 10) > 0 && (mul / 10) < 10)
+				else if (c <= 99 && c >= 10)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(mul / 10 + '0');
-					_putchar(mul % 10 + '0');
+					_putchar((c / 10) + '0');
 				}
-				else
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(((mul / 10) / 10) + '0');
-					_putchar(((mul / 10) % 10) + '0');
-					_putchar(mul % 10 + '0');
-				}
+				_putchar((c % 10) + '0');
 			}
-			j++;
+			_putchar('\n');
 		}
-		_putchar('\n');
-		i++;
 	}
 }
