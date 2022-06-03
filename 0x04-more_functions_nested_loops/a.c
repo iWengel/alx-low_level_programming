@@ -1,33 +1,18 @@
 #include "main.h"
 
 /**
- * more_numbers - prints the numbers 0-14 10 times
- * Return: 0 after printing
+ * print_line - prints a line
+ * @n: contains the number of times the character _ is printed
+ * Return: 0 after printing a line
  */
 
-void more_numbers(void)
+void print_line(int n)
 {
 	int i;
-	int j;
-	int a;
-	int b;
 
-	for (i = 0; i < 10; i++)
+	for (i = 1; i <= n; i++)
 	{
-		for (j = 0; j < 15; j++)
-		{
-			if (j < 10)
-			{
-				b = j;
-			}
-			else
-			{
-				a = j / 10;
-				b = j % 10;
-				_putchar(a + '0');
-			}
-			_putchar(b + '0');
-		}
-		_putchar('\n');
+		_putchar('_');
 	}
+	_putchar('\n');
 }
