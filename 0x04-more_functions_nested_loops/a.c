@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _isupper - checks whether a character is uppercase or not
- * @c: contains the character to be checked
- * Return: 1 if uppercase, 0 if otherwise
+ * _isdigit - checks whether a character is a digit or not
+ * @c: contains the value to be checked
+ * Return: 1 if it's a digit, 0 if otherwise
  */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
-	if ((c >= 65) && (c <= 90))
+	if ((c >= 48) && (c <= 57))
 	{
 		return (1);
 	}
