@@ -1,18 +1,34 @@
 #include "main.h"
-
 /**
- * print_line - prints a line
- * @n: contains the number of times the character _ is printed
- * Return: 0 after printing a line
+ * print_diagonal - prints a diagonal line
+ *@n: print int
+ * Return: 0 after printing a diagonal line
  */
-
-void print_line(int n)
+void print_diagonal(int n)
 {
-	int i;
 
-	for (i = 1; i <= n; i++)
-	{
-		_putchar('_');
-	}
-	_putchar('\n');
+int i;
+int b;
+
+if (n > 0)
+{
+for (i = 0; i < n; i++)
+{
+for (b = 0; b < i; b++)
+{
+_putchar (' ');
+}
+_putchar (92);
+_putchar ('\n');
+
+}
+
+}
+
+
+else
+{
+_putchar ('\n');
+}
+
 }
