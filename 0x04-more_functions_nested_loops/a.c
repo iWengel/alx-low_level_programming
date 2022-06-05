@@ -1,24 +1,25 @@
+#include "main.h"
 #include <stdio.h>
-
 /**
- * main - Entry point.
- *
- * Return: Always 0.
+ * print_number - prints int with putchar
+ * @n: contains the integer to be printed
+ * Return: void
  */
 
-int main(void)
-
+void print_number(int n)
 {
-long n, i;
+unsigned int m;
 
-n = 612852475143;
-for (i = 2; i < n; i++)
+if (n < 0)
 {
-while (n % i == 0)
-n = n / i;
+_putchar('-');
+m = -n;
 }
-
-printf("%lu\n", n);
-
-return (0);
+else
+{
+m = n;
+}
+if (m / 10 != 0)
+print_number(m / 10);
+_putchar((m % 10) + '0');
 }
