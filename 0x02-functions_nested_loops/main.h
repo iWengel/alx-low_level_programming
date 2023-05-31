@@ -53,4 +53,12 @@ int _isalpha(int c);
 
 int print_sign(int n);
 
+/**
+ * _abs - computes the absolute value of an integer
+ *
+ * Return: The absolute value of argumment integer.
+ */
+
+int _abs(int);
+
 #endif
