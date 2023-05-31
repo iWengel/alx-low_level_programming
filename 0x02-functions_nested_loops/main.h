@@ -10,4 +10,12 @@
 
 int _putchar(char c);
 
+/**
+ * print_alphabet - prints the alphabet to std out
+ *
+ * Return: 0 (Success)
+ */
+
+void print_alphabet(void);
+
 #endif
