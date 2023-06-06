@@ -17,23 +17,26 @@ void times_table(void)
 		while (j < 10)
 		{
 			mul = i * j;
-			if (mul < 10)
-				_putchar('0' + (mul));
-			else
+			if (mul >= 10)
 			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar('0' + (mul / 10));
 				_putchar('0' + (mul % 10));
 			}
-			if (j == 9)
+			else
 			{
-				_putchar('\n');
-				break;
+				if (j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				_putchar('0' + (mul));
 			}
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
 			j++;
 		}
+		_putchar('\n');
 		i++;
 	}
 }
