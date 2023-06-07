@@ -23,7 +23,7 @@ int main(void)
 			z = i1 + i2 + x;
 			i1 = i2, i2 = z;
 			j1 = j2, j2 = y;
-			printf("%lu%0101u", i2, j2);
+			printf("%lu%010lu", i2, j2);
 		}
 		else
 		{
