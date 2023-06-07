@@ -102,4 +102,13 @@ int add(int, int);
 
 void print_to_98(int n);
 
+/**
+ * print_times_table - prints the nth times table starting with 0
+ * @n: argument integer
+ *
+ * Return: Nothing.
+ */
+
+void print_times_table(int n);
+
 #endif
