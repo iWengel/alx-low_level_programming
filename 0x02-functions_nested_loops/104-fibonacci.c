@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int i = 0, j = 1, sum;
+	unsigned long int i = 0, j = 1, sum;
 	int count;
 
 	for (count = 0; count < 98; count++)
