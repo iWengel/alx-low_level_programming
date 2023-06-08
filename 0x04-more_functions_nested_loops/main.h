@@ -100,4 +100,13 @@ void print_square(int size);
 
 void print_triangle(int size);
 
+/**
+ * print_number - function that prints an integer
+ * @n: argument number to be printed
+ *
+ * Return: Nothing
+ */
+
+void print_number(int n);
+
 #endif
