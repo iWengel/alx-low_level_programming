@@ -2,6 +2,15 @@
 #define _MAIN_H_
 
 /**
+ * _putchar - prints a single character on stdout
+ * @c: argument character
+ *
+ * Return: 0
+ */
+
+int _putchar(char c);
+
+/**
  * _isupper - function that checks for an uppercase character
  * @c: ASCII value of argument character
  *
