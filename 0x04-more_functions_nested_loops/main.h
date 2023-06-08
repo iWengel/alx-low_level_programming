@@ -91,4 +91,13 @@ void print_diagonal(int n);
 
 void print_square(int size);
 
+/**
+ * print_triangle - function that prints a triangle
+ * @size: size of the triangle
+ *
+ * Return: Nothing
+ */
+
+void print_triangle(int size);
+
 #endif
