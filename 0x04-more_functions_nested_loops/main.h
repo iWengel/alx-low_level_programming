@@ -29,4 +29,12 @@ int _isdigit(int c);
 
 int mul(int a, int b);
 
+/**
+ * print_numbers - function that prints numbers
+ *
+ * Return: Nothing
+ */
+
+void print_numbers(void);
+
 #endif
