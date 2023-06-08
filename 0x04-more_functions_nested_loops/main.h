@@ -46,4 +46,12 @@ int mul(int a, int b);
 
 void print_numbers(void);
 
+/**
+ * print_most_numbers - function that prints numbers except some
+ *
+ * Return: Nothing
+ */
+
+void print_most_numbers(void);
+
 #endif
