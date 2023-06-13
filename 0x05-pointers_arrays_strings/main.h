@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int _putchar (char c);
+int _putchar(char c);
 
 /**
  * reset_to_98 - function that takes a pointer to an int and
@@ -47,5 +47,14 @@ int _strlen(char *s);
  */
 
 void _puts(char *str);
+
+/**
+ * print_rev - function that prints a string in reverse
+ * @s: pointer to the string to be reversed
+ *
+ * Return: Nothing.
+ */
+
+void print_rev(char *s);
 
 #endif
