@@ -2,10 +2,10 @@
 #ifndef _MAIN_H_
 
 /**
- * _putchar - prints a single character on stdout
- * @c: argument character
+ * _putchar - writes the character c to stdout
+ * @c: The character to be printed
  *
- * Return: 0
+ * Return: 1 (Success)
  */
 
 int _putchar(char c);
