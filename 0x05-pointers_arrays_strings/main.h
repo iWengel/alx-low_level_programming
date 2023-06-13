@@ -1,60 +1,12 @@
-#define _MAIN_H_
-#ifndef _MAIN_H_
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to be printed
- *
- * Return: 1 (Success)
- */
-
-int _putchar(char c);
-
-/**
- * reset_to_98 - function that takes a pointer to an int and
- * updates the value it points to to 98
- * @n: pointer to an int
- *
- * Return: Nothing.
- */
-
+int _putchar (char c);
 void reset_to_98(int *n);
-
-/**
- * swap_int - function that swaps the values of two integers
- * @a: pointer to the first integer
- * @b: pointer to the second integer
- *
- * Return: Nothing.
- */
-
 void swap_int(int *a, int *b);
-
-/**
- * _strlen - function that returns the length of a string
- * @s: array of characters
- *
- * Return: Length of the string.
- */
-
 int _strlen(char *s);
-
-/**
- * _puts - function that prints a string to stdout.
- * @str: array containing the string to be printed
- *
- * Return: Nothing.
- */
-
 void _puts(char *str);
-
-/**
- * print_rev - function that prints a string in reverse
- * @s: pointer to the string to be reversed
- *
- * Return: Nothing.
- */
-
 void print_rev(char *s);
-
-#endif
+void rev_string(char *s);
+void puts2(char *str);
+void puts_half(char *str);
+void print_array(int *a, int n);
+char *_strcpy(char *dest, char *src);
+int _atoi(char *s);
