@@ -76,4 +76,13 @@ void rev_string(char *s);
 
 void puts2(char *str);
 
+/**
+ * puts_half - function that prints half of a string
+ * @str: pointer to the argument string
+ *
+ * Return: Nothing.
+ */
+
+void puts_half(char *str);
+
 #endif
