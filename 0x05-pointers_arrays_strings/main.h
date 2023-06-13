@@ -30,4 +30,13 @@ void swap_int(int *a, int *b);
 
 int _strlen(char *s);
 
+/**
+ * _puts - function that prints a string to stdout.
+ * @str: array containing the string to be printed
+ *
+ * Return: Nothing.
+ */
+
+void _puts(char *str);
+
 #endif
