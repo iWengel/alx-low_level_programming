@@ -85,4 +85,35 @@ void puts2(char *str);
 
 void puts_half(char *str);
 
+/**
+ * print_array - function that prints 'n' elements of an array of ints
+ * @a: pointer to the array
+ * @n: the number of integers to be printed
+ *
+ * Return: Nothing
+ */
+
+void print_array(int *a, int n);
+
+/**
+ * *_strcpy - function that copies the string pointed to by src, to the
+ * buffer pointed by dest.
+ * @src: pointer pointing to the source of the string
+ * @dest: pointer pointing to the destination of the string
+ *
+ * Return: The string.
+ */
+
+char *_strcpy(char *dest, char *src);
+
+/**
+ * _atoi - function that converts a string to an integer
+ * @s: argument string
+ *
+ * Return: interger value of string
+ */
+
+int _atoi(char *s);
+
+
 #endif
