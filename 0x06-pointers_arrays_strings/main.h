@@ -45,4 +45,13 @@ char *_strncat(char *dest, char *src, int n);
 
 char *_strncpy(char *dest, char *src, int n);
 
+/**
+ * _strcmp - compares two strings
+ * @s1: string 1
+ * @s2: string 2
+ *
+ * Return: 0 if strings are equal, otherwise if not
+ */
+
+int _strcmp(char *s1, char *s2);
 #endif
