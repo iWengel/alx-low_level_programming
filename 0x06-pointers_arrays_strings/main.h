@@ -71,6 +71,6 @@ void reverse_array(int *a, int n);
  * Return: pointer to the changed string
  */
 
-char *string_toupper(char *s);
+char *string_toupper(char *);
 
 #endif
