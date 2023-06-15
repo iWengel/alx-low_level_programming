@@ -33,4 +33,16 @@ char *_strcat(char *dest, char *src);
 
 char *_strncat(char *dest, char *src, int n);
 
+/**
+ * *_strncpy - copies a string
+ * @dest: copy destination string
+ * @src: string containing characters to be copied
+ * @n: number specifying the index of the character up to which
+ * the string is to be copied
+ *
+ * Return: pointer to the modified(copied) string
+ */
+
+char *_strncpy(char *dest, char *src, int n);
+
 #endif
