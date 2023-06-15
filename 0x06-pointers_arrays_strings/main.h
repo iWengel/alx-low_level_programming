@@ -20,4 +20,17 @@ int _putchar(char c);
 
 char *_strcat(char *dest, char *src);
 
+/**
+ * *_strncat - concatenates two strings using at most n
+ * bytes from the appended string
+ * @dest: first part of the string
+ * @src: second part of the string
+ * @n: number specifying the index of the character in the
+ * second string upto which is to be appended
+ *
+ * Return: pointer to the concatenated string
+ */
+
+char *_strncat(char *dest, char *src, int n);
+
 #endif
