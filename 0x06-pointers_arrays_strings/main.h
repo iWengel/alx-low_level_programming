@@ -89,4 +89,12 @@ char *cap_string(char *);
 
 char *leet(char *);
 
+/**
+ * *rot13 - encodes a string using rot13
+ *
+ * Return: pointer to the encoded string
+ */
+
+char *rot13(char *);
+
 #endif
