@@ -73,4 +73,12 @@ void reverse_array(int *a, int n);
 
 char *string_toupper(char *);
 
+/**
+ * *cap_string - capitalizes all words in a string
+ *
+ * Retrurn: pointer to the capitalized string
+ */
+
+char *cap_string(char *);
+
 #endif
